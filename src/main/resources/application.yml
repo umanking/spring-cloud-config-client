@@ -1,0 +1,21 @@
+app:
+  name: my app
+  description: welcome to ${app.name}
+
+
+my:
+  greeting: hello world
+  list:
+      values: one, two, three
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
